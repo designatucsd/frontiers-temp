@@ -1,0 +1,163 @@
+@import 'reset';
+@import 'variables';
+@import 'breakpoints';
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Din";
+  font-size: 62.5%;
+  color: $dark-gray;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  color: $pink;
+  font-size: 2.2rem;
+  @include sm-up {
+    font-size: 3.9rem;
+  }
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  opacity: 0.8;
+  @include sm-up {
+    font-size: 2.2rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  @include sm-up {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+}
+
+.container {
+  padding: 0 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  @include sm-up {
+    padding: 0 4rem;
+  }
+}
+
+#content {
+  background-image: url('/images/dotted-bg.svg');
+  background-repeat: repeat;
+  //background-size: 155%;
+  min-height: calc(100vh - #{$footer-height});
+  .container {
+    min-height: calc(100vh - #{$footer-height});
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.blurb {
+  margin: 3.5rem 0;
+  max-width: 30rem;
+  background-color: #fff;
+  box-shadow: 0 0 7rem 3rem white;
+  @include sm-up {
+    margin: 4.5rem 0;
+  }
+}
+
+#footer {
+  background-color: #37474F;
+  height: $footer-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    width: 100%;
+    color: #fff;
+    @include md-up {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline-color: $light-pink;
+}
+
+.fields {
+  margin-top: 1.4rem;
+  display: flex;
+  align-items: start;
+  @include sm-up {
+    margin-top: 1.8rem;
+  }
+}
+
+input {
+  font-family: 'Din', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.03rem;
+  border: 0;
+  padding: 0 1rem;
+  font-size: 1rem;
+  @include sm-up {
+    font-size: 1.3rem;
+    padding: 0 1.4rem;
+  }
+}
+
+.email, ::placeholder {
+  color: #929292;
+}
+
+.email {
+  background-color: #EDEDED;
+  width: 100%;
+  height: calc(#{$input-height} + #{$btn-shadow-height});
+  @include sm-up {
+    height: calc(#{$input-height-sm} + #{$btn-shadow-height});
+  }
+}
+
+.btn {
+  width: 11rem;
+  margin-left: .65rem;
+  color: #fff;
+  background-color: $pink;
+  box-shadow: 0 $btn-shadow-height 0 $dark-pink;
+  height: $input-height;
+  @include sm-up {
+    margin-left: .9rem;
+    height: $input-height-sm;
+  }
+}
+
+.logo {
+  img {
+    height: 1.7rem;
+    @include md-up {
+      height: 2.3rem;
+    }
+  }
+}
+
+.copyright {
+  font-size: .9rem;
+  margin-top: .9rem;
+  @include md-up {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+}

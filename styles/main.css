@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Din";
+  font-size: 62.5%;
+  color: #414141; }
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  color: #EC407A;
+  font-size: 2.2rem; }
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 3.9rem; } }
+
+h2 {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  opacity: 0.8; }
+  @media (min-width: 600px) {
+    h2 {
+      font-size: 2.2rem; } }
+
+p {
+  font-size: 1rem;
+  line-height: 1.75rem; }
+  @media (min-width: 600px) {
+    p {
+      font-size: 1.5rem;
+      line-height: 2.4rem; } }
+
+.container {
+  padding: 0 2rem;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 600px) {
+    .container {
+      padding: 0 4rem; } }
+
+#content {
+  background-image: url("/images/dotted-bg.svg");
+  background-repeat: repeat;
+  min-height: calc(100vh - 5.7rem); }
+  #content .container {
+    min-height: calc(100vh - 5.7rem);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.blurb {
+  margin: 3.5rem 0;
+  max-width: 30rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 7rem 3rem white;
+          box-shadow: 0 0 7rem 3rem white; }
+  @media (min-width: 600px) {
+    .blurb {
+      margin: 4.5rem 0; } }
+
+#footer {
+  background-color: #37474F;
+  height: 5.7rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #footer .container {
+    width: 100%;
+    color: #fff; }
+    @media (min-width: 840px) {
+      #footer .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline-color: #FFAEC9; }
+
+.fields {
+  margin-top: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start; }
+  @media (min-width: 600px) {
+    .fields {
+      margin-top: 1.8rem; } }
+
+input {
+  font-family: 'Din', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.03rem;
+  border: 0;
+  padding: 0 1rem;
+  font-size: 1rem; }
+  @media (min-width: 600px) {
+    input {
+      font-size: 1.3rem;
+      padding: 0 1.4rem; } }
+
+.email, ::-webkit-input-placeholder {
+  color: #929292; }
+
+.email, :-ms-input-placeholder {
+  color: #929292; }
+
+.email, ::-ms-input-placeholder {
+  color: #929292; }
+
+.email, ::placeholder {
+  color: #929292; }
+
+.email {
+  background-color: #EDEDED;
+  width: 100%;
+  height: calc(2.4rem + 0.2rem); }
+  @media (min-width: 600px) {
+    .email {
+      height: calc(2.9rem + 0.2rem); } }
+
+.btn {
+  width: 11rem;
+  margin-left: .65rem;
+  color: #fff;
+  background-color: #EC407A;
+  -webkit-box-shadow: 0 0.2rem 0 #B52253;
+          box-shadow: 0 0.2rem 0 #B52253;
+  height: 2.4rem; }
+  @media (min-width: 600px) {
+    .btn {
+      margin-left: .9rem;
+      height: 2.9rem; } }
+
+.logo img {
+  height: 1.7rem; }
+  @media (min-width: 840px) {
+    .logo img {
+      height: 2.3rem; } }
+
+.copyright {
+  font-size: .9rem;
+  margin-top: .9rem; }
+  @media (min-width: 840px) {
+    .copyright {
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 0; } }
