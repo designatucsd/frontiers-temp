@@ -45,9 +45,33 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: 'Dinn';
+  src: url("../fonts/din-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Dinn';
+  src: url("../fonts/din-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Dinn';
+  src: url("../fonts/din-medium-webfont.eot") format("eot");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Dinn';
+  src: url("../fonts/din-regular-webfont.eot") format("eot");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: "Din";
+  font-family: "Din", sans-serif;
   font-size: 62.5%;
   color: #414141; }
 
@@ -76,14 +100,6 @@ p {
       font-size: 1.5rem;
       line-height: 2.4rem; } }
 
-.container {
-  padding: 0 2rem;
-  margin-left: auto;
-  margin-right: auto; }
-  @media (min-width: 600px) {
-    .container {
-      padding: 0 4rem; } }
-
 #content {
   background-image: url("/images/dotted-bg.svg");
   background-repeat: repeat;
@@ -100,6 +116,14 @@ p {
         -ms-flex-align: center;
             align-items: center; }
 
+.container {
+  padding: 0 2rem;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 600px) {
+    .container {
+      padding: 0 4rem; } }
+
 .blurb {
   margin: 3.5rem 0;
   max-width: 30rem;
@@ -110,40 +134,7 @@ p {
     .blurb {
       margin: 4.5rem 0; } }
 
-#footer {
-  background-color: #37474F;
-  height: 5.7rem;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  #footer .container {
-    width: 100%;
-    color: #fff; }
-    @media (min-width: 840px) {
-      #footer .container {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; } }
-
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline-color: #FFAEC9; }
-
+/* Form styles */
 .fields {
   margin-top: 1.4rem;
   display: -webkit-box;
@@ -156,8 +147,14 @@ button:focus {
     .fields {
       margin-top: 1.8rem; } }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline-color: #FFAEC9; }
+
 input {
-  font-family: 'Din', sans-serif;
+  font-family: "Din", sans-serif;
   font-weight: 500;
   letter-spacing: -0.03rem;
   border: 0;
@@ -200,6 +197,35 @@ input {
     .btn {
       margin-left: .9rem;
       height: 2.9rem; } }
+
+/* Footer styles */
+#footer {
+  background-color: #37474F;
+  height: 5.7rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #footer .container {
+    width: 100%;
+    color: #fff; }
+    @media (min-width: 840px) {
+      #footer .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
 
 .logo img {
   height: 1.7rem; }

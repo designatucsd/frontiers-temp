@@ -1,10 +1,11 @@
 @import 'reset';
+@import 'fonts';
 @import 'variables';
 @import 'breakpoints';
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: "Din";
+  font-family: $din;
   font-size: 62.5%;
   color: $dark-gray;
 }
@@ -37,25 +38,24 @@ p {
   }
 }
 
-.container {
-  padding: 0 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  @include sm-up {
-    padding: 0 4rem;
-  }
-}
-
 #content {
   background-image: url('/images/dotted-bg.svg');
   background-repeat: repeat;
-  //background-size: 155%;
   min-height: calc(100vh - #{$footer-height});
   .container {
     min-height: calc(100vh - #{$footer-height});
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.container {
+  padding: 0 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  @include sm-up {
+    padding: 0 4rem;
   }
 }
 
@@ -69,22 +69,13 @@ p {
   }
 }
 
-#footer {
-  background-color: #37474F;
-  height: $footer-height;
-  text-align: center;
+/* Form styles */
+.fields {
+  margin-top: 1.4rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  .container {
-    width: 100%;
-    color: #fff;
-    @include md-up {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
+  align-items: start;
+  @include sm-up {
+    margin-top: 1.8rem;
   }
 }
 
@@ -95,17 +86,8 @@ button:focus {
     outline-color: $light-pink;
 }
 
-.fields {
-  margin-top: 1.4rem;
-  display: flex;
-  align-items: start;
-  @include sm-up {
-    margin-top: 1.8rem;
-  }
-}
-
 input {
-  font-family: 'Din', sans-serif;
+  font-family: $din;
   font-weight: 500;
   letter-spacing: -0.03rem;
   border: 0;
@@ -130,6 +112,7 @@ input {
   }
 }
 
+// Stay updated button
 .btn {
   width: 11rem;
   margin-left: .65rem;
@@ -140,6 +123,25 @@ input {
   @include sm-up {
     margin-left: .9rem;
     height: $input-height-sm;
+  }
+}
+
+/* Footer styles */
+#footer {
+  background-color: #37474F;
+  height: $footer-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    width: 100%;
+    color: #fff;
+    @include md-up {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
 
