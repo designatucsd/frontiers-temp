@@ -122,6 +122,7 @@ input {
   box-shadow: 0 $btn-shadow-height 0 $dark-pink;
   height: $input-height;
   -webkit-appearance: none;
+  cursor: pointer;
   @include sm-up {
     margin-left: .9rem;
     height: $input-height-sm;

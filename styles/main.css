@@ -1,20 +1,26 @@
 @font-face {
   font-family: 'Din';
-  src: url("../fonts/din-medium-webfont.eot"),
-    url("../fonts/din-medium-webfont.woff") format("woff"),
-    url("../fonts/din-medium-webfont.ttf") format("truetype");
+  src: url("../fonts/din-medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Din';
-  src: url("../fonts/din-regular-webfont.eot"),
-    url("../fonts/din-regular-webfont.woff") format("woff"),
-    url("../fonts/din-regular-webfont.ttf") format("truetype");
+  src: url("../fonts/din-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Din';
+  src: url("../fonts/din-medium-webfont.eot") format("eot");
+  font-weight: 500;
+  font-style: normal; }
 
+@font-face {
+  font-family: 'Din';
+  src: url("../fonts/din-regular-webfont.eot") format("eot");
+  font-weight: normal;
+  font-style: normal; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -187,7 +193,8 @@ input {
   -webkit-box-shadow: 0 0.2rem 0 #B52253;
           box-shadow: 0 0.2rem 0 #B52253;
   height: 2.4rem;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  cursor: pointer; }
   @media (min-width: 600px) {
     .btn {
       margin-left: .9rem;
