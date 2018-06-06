@@ -194,7 +194,12 @@ input {
           box-shadow: 0 0.2rem 0 #B52253;
   height: 2.4rem;
   -webkit-appearance: none;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s; }
+  @media (hover: hover) {
+    .btn:hover {
+      background-color: #B52253; } }
   @media (min-width: 600px) {
     .btn {
       margin-left: .9rem;

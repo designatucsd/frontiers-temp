@@ -123,6 +123,12 @@ input {
   height: $input-height;
   -webkit-appearance: none;
   cursor: pointer;
+  transition: .3s;
+  @media (hover: hover) {
+    &:hover {
+      background-color: $dark-pink;
+    }
+  }
   @include sm-up {
     margin-left: .9rem;
     height: $input-height-sm;
