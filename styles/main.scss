@@ -1,5 +1,5 @@
-@import 'reset';
 @import 'fonts';
+@import 'reset';
 @import 'variables';
 @import 'breakpoints';
 
@@ -41,7 +41,7 @@ p {
 #content {
   background-image: url('/images/dotted-bg.svg');
   background-repeat: repeat;
-  min-height: calc(100vh - #{$footer-height});
+  //min-height: calc(100vh - #{$footer-height});
   .container {
     min-height: calc(100vh - #{$footer-height});
     display: flex;
@@ -93,6 +93,7 @@ input {
   border: 0;
   padding: 0 1rem;
   font-size: 1rem;
+  border-radius: 0;
   @include sm-up {
     font-size: 1.3rem;
     padding: 0 1.4rem;
@@ -120,6 +121,7 @@ input {
   background-color: $pink;
   box-shadow: 0 $btn-shadow-height 0 $dark-pink;
   height: $input-height;
+  -webkit-appearance: none;
   @include sm-up {
     margin-left: .9rem;
     height: $input-height-sm;

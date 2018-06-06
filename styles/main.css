@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Dinn';
+  src: url("../fonts/din-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Dinn';
+  src: url("../fonts/din-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Dinn';
+  src: url("../fonts/din-medium-webfont.eot") format("eot");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Dinn';
+  src: url("../fonts/din-regular-webfont.eot") format("eot");
+  font-weight: normal;
+  font-style: normal; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -45,30 +69,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@font-face {
-  font-family: 'Dinn';
-  src: url("../fonts/din-medium-webfont.woff") format("woff");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Dinn';
-  src: url("../fonts/din-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Dinn';
-  src: url("../fonts/din-medium-webfont.eot") format("eot");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Dinn';
-  src: url("../fonts/din-regular-webfont.eot") format("eot");
-  font-weight: normal;
-  font-style: normal; }
-
 body {
   -webkit-font-smoothing: antialiased;
   font-family: "Din", sans-serif;
@@ -102,8 +102,7 @@ p {
 
 #content {
   background-image: url("/images/dotted-bg.svg");
-  background-repeat: repeat;
-  min-height: calc(100vh - 5.7rem); }
+  background-repeat: repeat; }
   #content .container {
     min-height: calc(100vh - 5.7rem);
     display: -webkit-box;
@@ -159,7 +158,8 @@ input {
   letter-spacing: -0.03rem;
   border: 0;
   padding: 0 1rem;
-  font-size: 1rem; }
+  font-size: 1rem;
+  border-radius: 0; }
   @media (min-width: 600px) {
     input {
       font-size: 1.3rem;
@@ -192,7 +192,8 @@ input {
   background-color: #EC407A;
   -webkit-box-shadow: 0 0.2rem 0 #B52253;
           box-shadow: 0 0.2rem 0 #B52253;
-  height: 2.4rem; }
+  height: 2.4rem;
+  -webkit-appearance: none; }
   @media (min-width: 600px) {
     .btn {
       margin-left: .9rem;
